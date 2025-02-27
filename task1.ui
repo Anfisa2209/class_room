@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>929</width>
-    <height>718</height>
+    <width>987</width>
+    <height>727</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -32,10 +32,10 @@ border-radius: 5px;
    <widget class="QLabel" name="map_image">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>100</y>
-      <width>689</width>
-      <height>585</height>
+      <x>20</x>
+      <y>210</y>
+      <width>661</width>
+      <height>451</height>
      </rect>
     </property>
     <property name="text">
@@ -45,8 +45,8 @@ border-radius: 5px;
    <widget class="QPushButton" name="change_theme_btn">
     <property name="geometry">
      <rect>
-      <x>740</x>
-      <y>650</y>
+      <x>780</x>
+      <y>640</y>
       <width>161</width>
       <height>41</height>
      </rect>
@@ -107,6 +107,24 @@ color: red;</string>
     </property>
     <property name="text">
      <string>Сброс метки</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="full_address_lbl">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>130</y>
+      <width>651</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: 'Courier New', Courier, monospace;
+font-size:20px;
+color: rgb(85, 170, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>

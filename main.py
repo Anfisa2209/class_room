@@ -41,6 +41,7 @@ class MyWidget(QMainWindow):
 
     def delete_point(self):
         self.pt = ''
+        self.full_address_lbl.setText('')
         self.refresh_map()
 
     def find_address(self):
@@ -51,10 +52,12 @@ class MyWidget(QMainWindow):
             return
         try:
             toponym = get_object(address_text)
+            full_address = toponym["metaDataProperty"]["GeocoderMetaData"]["Address"]["formatted"]
             self.map_ll, spn = get_ll_spn(toponym)
             self.map_ll = list(map(float, self.map_ll.split(',')))
             self.z = 10
             self.pt = ",".join(map(str, self.map_ll))
+            self.full_address_lbl.setText(full_address)
         except:
             self.error_lbl.setText('Ошибка! Такого адреса не существует.')
         self.refresh_map()
