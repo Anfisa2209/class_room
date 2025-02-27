@@ -13,6 +13,21 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">.QPushButton{
+background-color: rgb(170, 170, 127);
+border-radius: 5px;
+font-size:18px;
+font-family: 'Courier New', Courier, monospace;
+}
+.QPushButton::hover{
+background-color:rgb(141, 141, 106);
+}
+.QLineEdit{
+border-radius: 5px;
+}
+</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="map_image">
     <property name="geometry">
@@ -30,14 +45,55 @@
    <widget class="QPushButton" name="change_theme_btn">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>20</y>
+      <x>740</x>
+      <y>650</y>
       <width>161</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>Сменить тему</string>
+     <string>Темная тема</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="address">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>661</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="find_btn">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>10</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Искать</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="error_lbl">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>70</y>
+      <width>501</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family: 'Courier New', Courier, monospace;
+font-size:20px;
+color: red;</string>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>

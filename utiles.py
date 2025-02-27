@@ -32,12 +32,13 @@ def get_ll_spn(toponym: dict):
     return object_ll, object_spn
 
 
-def get_static_api_image(object_ll, z=5, theme='light'):
+def get_static_api_image(object_ll, z=5, theme='light', pt=''):
     map_params = {
         "ll": object_ll,
         'apikey': "f3a0fe3a-b07e-4840-a1da-06f18b2ddf13",
         'z': z,
-        'theme': theme
+        'theme': theme,
+        'pt': pt
     }
 
     map_api_server = "https://static-maps.yandex.ru/v1?"
