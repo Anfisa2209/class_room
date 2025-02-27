@@ -20,6 +20,7 @@ class MyWidget(QMainWindow):
         self.refresh_map()
         self.change_theme_btn.clicked.connect(self.change_theme)
         self.find_btn.clicked.connect(self.find_address)
+        self.delete_point_btn.clicked.connect(self.delete_point)
         self.address.returnPressed.connect(self.find_address)
         self.setFocusPolicy(Qt.FocusPolicy.StrongFocus)
 
@@ -36,6 +37,10 @@ class MyWidget(QMainWindow):
     def change_theme(self):
         self.theme = 'dark' if self.theme == 'light' else 'light'
         self.change_theme_btn.setText('Темная тема' if self.theme == 'light' else 'Светлая тема')
+        self.refresh_map()
+
+    def delete_point(self):
+        self.pt = ''
         self.refresh_map()
 
     def find_address(self):
