@@ -26,7 +26,10 @@ background-color:rgb(141, 141, 106);
 .QLineEdit{
 border-radius: 5px;
 }
-</string>
+.QCheckBox{
+font-size:18px;
+font-family: 'Courier New', Courier, monospace;
+}</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="map_image">
@@ -45,7 +48,7 @@ border-radius: 5px;
    <widget class="QPushButton" name="change_theme_btn">
     <property name="geometry">
      <rect>
-      <x>780</x>
+      <x>730</x>
       <y>640</y>
       <width>161</width>
       <height>41</height>
@@ -120,11 +123,28 @@ color: red;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font-family: 'Courier New', Courier, monospace;
-font-size:20px;
+font-size:14px;
 color: rgb(85, 170, 0);</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="index">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>150</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+</string>
+    </property>
+    <property name="text">
+     <string>Почтовый индекс</string>
     </property>
    </widget>
   </widget>
