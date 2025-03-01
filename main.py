@@ -78,19 +78,20 @@ class MyWidget(QMainWindow):
         lat, lon = self.map_ll
         coef = 0.005 if self.z > 8 else 0.0005 if self.z > 15 else 4
         key_pressed = event.key()
-        if key_pressed == Qt.Key.Key_Up:
-            lon += coef
-        if key_pressed == Qt.Key.Key_Down:
-            lon -= coef
-        if key_pressed == Qt.Key.Key_Left:
-            lat -= coef
-        if key_pressed == Qt.Key.Key_Right:
-            lat += coef
+        # if key_pressed == Qt.Key.Key_Up:
+        #     lon += coef
+        # if key_pressed == Qt.Key.Key_Down:
+        #     lon -= coef
+        # if key_pressed == Qt.Key.Key_Left:
+        #     lat -= coef
+        # if key_pressed == Qt.Key.Key_Right:
+        #     lat += coef
         if key_pressed == Qt.Key.Key_PageUp:
             if self.z < 21:
                 self.z += 1
         if key_pressed == Qt.Key.Key_PageDown:
-            self.z -= 1
+            if self.z:
+                self.z -= 1
 
         self.map_ll = [lat, lon]
         self.refresh_map()
