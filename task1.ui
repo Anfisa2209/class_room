@@ -45,42 +45,6 @@ font-family: 'Courier New', Courier, monospace;
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="change_theme_btn">
-    <property name="geometry">
-     <rect>
-      <x>730</x>
-      <y>640</y>
-      <width>161</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Темная тема</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="address">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>10</y>
-      <width>661</width>
-      <height>51</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="find_btn">
-    <property name="geometry">
-     <rect>
-      <x>730</x>
-      <y>10</y>
-      <width>131</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Искать</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="error_lbl">
     <property name="geometry">
      <rect>
@@ -99,19 +63,6 @@ color: red;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="delete_point_btn">
-    <property name="geometry">
-     <rect>
-      <x>730</x>
-      <y>80</y>
-      <width>131</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Сброс метки</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="full_address_lbl">
     <property name="geometry">
      <rect>
@@ -128,23 +79,6 @@ color: rgb(85, 170, 0);</string>
     </property>
     <property name="text">
      <string/>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="index">
-    <property name="geometry">
-     <rect>
-      <x>730</x>
-      <y>150</y>
-      <width>201</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-</string>
-    </property>
-    <property name="text">
-     <string>Почтовый индекс</string>
     </property>
    </widget>
   </widget>
